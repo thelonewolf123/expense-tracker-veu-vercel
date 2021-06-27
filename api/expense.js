@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const expense = require("./model/expense_model");
 
 const MONGODB_URI = "MONGODB_CONNECTION_URI";
 
@@ -21,14 +22,7 @@ const connectToDatabase = () => {
 
 module.exports = (req, res) => {
   const conection = connectToDatabase();
-  const expenseSchema = mongoose.Schema({
-    amount: String,
-    comment: String,
-    category: String,
-    type: String,
-  });
 
-  const expense = mongoose.model("expense", expenseSchema);
   const dbcallback = (err, data) => {
     if (err) {
       console.log(err);
