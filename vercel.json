@@ -1,7 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "api/*": {
+    "api/expense.js": {
       "memory": 128,
       "maxDuration": 5
     }
