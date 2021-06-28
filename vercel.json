@@ -1,0 +1,6 @@
+{
+    "version": 2,
+    "env": {
+      "mongodb_connection_uri": "@mongodb_connection_uri"
+    }
+  }

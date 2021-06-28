@@ -1,5 +1,5 @@
 <template>
-    <input v-model="amount" type="text" placeholder="Rs. " class="form-control m-2">
+    <input v-model="amount" type="number" placeholder="Rs. " class="form-control m-2">
     <input v-model="comment" type="text" placeholder="Comment" class="form-control m-2">
     <select v-model="category" class="form-control m-2">
         <option>Food</option>
@@ -24,7 +24,7 @@ export default {
     methods: {
         expense() {
             let value = {
-                amount : this.amount,
+                amount : parseInt(this.amount),
                 comment: this.comment,
                 category: this.category,
                 type: 'expense'
@@ -37,7 +37,7 @@ export default {
         },
         income() {
             let value = {
-                amount : this.amount,
+                amount : parseInt(this.amount),
                 comment: this.comment,
                 type: 'income'
             }

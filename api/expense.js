@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const expense = require("./model/expense_model");
 
-const MONGODB_URI = process.env.MONGODB_CONNECTION_URI;
+const MONGODB_URI = process.env.mongodb_connection_uri;
 
 mongoose.Promise = global.Promise;
 let isConnected;

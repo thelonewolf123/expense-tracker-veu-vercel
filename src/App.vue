@@ -25,9 +25,9 @@ export default {
         let sum = 0;
         this.account.forEach((val) => {
           if (val.type === "expense") {
-            sum -= parseInt(val.amount);
+            sum -= val.amount;
           } else {
-            sum += parseInt(val.amount);
+            sum += val.amount;
           }
         });
         return sum;

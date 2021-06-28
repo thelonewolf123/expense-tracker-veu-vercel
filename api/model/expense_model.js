@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const expenseSchema = mongoose.Schema({
-  amount: String,
+  amount: Number,
   comment: String,
   category: String,
   type: String,
