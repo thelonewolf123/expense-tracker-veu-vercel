@@ -1,6 +1,13 @@
 {
-    "version": 2,
-    "env": {
-      "mongodb_connection_uri": "@mongodb_connection_uri"
+  "version": 2,
+  "functions": {
+    "api/*": {
+      "memory": 128,
+      "maxDuration": 5
     }
+  },
+  "cleanUrls": true,
+  "env": {
+    "mongodb_connection_uri": "@mongodb_connection_uri"
   }
+}
